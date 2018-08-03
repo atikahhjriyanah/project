@@ -1,0 +1,39 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package bintangmethod;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author lenovo
+ */
+public class Bintangmethod {
+
+    /**
+     * @param args the command line arguments
+     */
+  
+        // TODO code application logic here
+        public static void cetaksegitigabintang() {
+        Scanner bintang = new Scanner (System.in);
+    
+    System.out.println("| Soal Segi Tiga Bintang |");
+    System.out.println("==========================");
+    System.out.print("Ukuran= ");
+    
+    int b1 = bintang.nextInt();
+    System.out.println("==========================");
+    
+    for(int i = 1; i <= b1; i++) {
+        for(int j = i; j <=i; j++) {
+            System.out.print(" * ");
+        }
+    }
+       
+        }
+}
+    
+
