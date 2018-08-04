@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author lenovo
+ */
+public class main {
+        public static void main(String[] args) {
+        
+        String kataAsli , kataBalik ="";
+        
+        Scanner inputUser = new Scanner(System.in);
+        System.out.println("Kata yang ingin di cek palindrome = ");
+        kataAsli = inputUser.nextLine();
+        int panjang = kataAsli.length();
+        for (int index = panjang -1; index>=0; index--)
+        {
+            kataBalik = kataBalik + kataAsli.charAt(index);
+        }
+        if(kataAsli.equals(kataBalik))
+        {
+            System.out.println("kata ini termasuk palindrome.");
+        }
+        else
+        {
+            System.out.println("kata ini bukan palindrome.");
+        }
+    }
+}
